@@ -14,17 +14,17 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<mat-tab-group
+<!-- <mat-tab-group
   class="active-plugin-list"
   [selectedIndex]="getActivePluginIndex()"
   animationDuration="100ms"
 >
   <mat-tab *ngFor="let plugin of activePlugins" [disabled]="!plugin.enabled">
-    <ng-template mat-tab-label>
+    <ng-template mat-tab-label>-->
       <!-- Manually subscribe to the click event on the tab content element.
       Cannot trust the selectedTabChange event since it is async and can cause
       infinte loop. -->
-      <span
+      <!--<span
         class="plugin-name"
         (click)="onActivePluginSelection($event, plugin.id)"
         [attr.data-plugin-id]="plugin.id"
@@ -33,8 +33,8 @@ limitations under the License.
       </span>
     </ng-template>
   </mat-tab>
-</mat-tab-group>
-<mat-form-field floatLabel="never" *ngIf="disabledPlugins.length > 0">
+</mat-tab-group> -->
+<!-- <mat-form-field floatLabel="never" *ngIf="disabledPlugins.length > 0">
   <mat-label>Inactive</mat-label>
   <mat-select
     [value]="selectedPlugin"
@@ -48,4 +48,4 @@ limitations under the License.
       {{ plugin.tab_name }}
     </mat-option>
   </mat-select>
-</mat-form-field>
+</mat-form-field> -->

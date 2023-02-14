@@ -37,7 +37,7 @@ class TfRunsSelector extends LegacyElementMixin(PolymerElement) {
       </tf-wbr-string
     ></paper-dialog>
     <div id="top-text">
-      <h3 id="tooltip-help" class="tooltip-container">Runs</h3>
+      <h3 id="tooltip-help" class="tooltip-container">运行结果</h3>
     </div>
     <tf-multi-checkbox
       id="multiCheckbox"
@@ -48,7 +48,7 @@ class TfRunsSelector extends LegacyElementMixin(PolymerElement) {
       coloring="[[coloring]]"
     ></tf-multi-checkbox>
     <paper-button class="x-button" id="toggle-all" on-tap="_toggleAll">
-      Toggle All Runs
+    切换所有运行结果
     </paper-button>
     <template is="dom-if" if="[[dataLocation]]">
       <div id="data-location">

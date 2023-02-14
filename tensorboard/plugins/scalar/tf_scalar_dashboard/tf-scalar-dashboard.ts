@@ -55,18 +55,18 @@ class TfScalarDashboard extends LegacyElementMixin(ArrayUpdateHelper) {
               <paper-checkbox
                 id="show-download-links"
                 checked="{{_showDownloadLinks}}"
-                >Show data download links</paper-checkbox
+                >显示数据下载链接</paper-checkbox
               >
             </div>
             <div class="line-item">
               <paper-checkbox
                 id="ignore-y-outlier"
                 checked="{{_ignoreYOutliers}}"
-                >Ignore outliers in chart scaling</paper-checkbox
+                >忽略图表缩放中的异常值</paper-checkbox
               >
             </div>
             <div id="tooltip-sorting">
-              <div>Tooltip sorting method:</div>
+              <div>工具提示排序方法:</div>
               <paper-dropdown-menu
                 no-label-float
                 selected-item-label="{{_tooltipSortingMethod}}"
@@ -76,10 +76,10 @@ class TfScalarDashboard extends LegacyElementMixin(ArrayUpdateHelper) {
                   selected="0"
                   slot="dropdown-content"
                 >
-                  <paper-item>default</paper-item>
-                  <paper-item>descending</paper-item>
-                  <paper-item>ascending</paper-item>
-                  <paper-item>nearest</paper-item>
+                  <paper-item>默认</paper-item>
+                  <paper-item>下降</paper-item>
+                  <paper-item>上升</paper-item>
+                  <paper-item>最近</paper-item>
                 </paper-listbox>
               </paper-dropdown-menu>
             </div>
@@ -95,14 +95,14 @@ class TfScalarDashboard extends LegacyElementMixin(ArrayUpdateHelper) {
           <div class="sidebar-section">
             <tf-option-selector
               id="x-type-selector"
-              name="Horizontal Axis"
+              name="横轴"
               selected-id="{{_xType}}"
             >
-              <paper-button id="step">step</paper-button
+              <paper-button id="step">步长</paper-button
               ><!--
-            --><paper-button id="relative">relative</paper-button
+            --><paper-button id="relative">相关性</paper-button
               ><!--
-            --><paper-button id="wall_time">wall</paper-button>
+            --><paper-button id="wall_time">时钟时间</paper-button>
             </tf-option-selector>
           </div>
         </div>

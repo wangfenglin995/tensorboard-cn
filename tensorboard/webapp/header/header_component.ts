@@ -18,22 +18,9 @@ import {Component} from '@angular/core';
   selector: 'app-header',
   template: `
     <mat-toolbar>
-      <span class="brand">TensorBoard</span>
+      <span class="brand">自动化所训练指标可观测性面板</span>
       <plugin-selector class="plugins"></plugin-selector>
-      <tbdev-upload-button></tbdev-upload-button>
-      <app-header-dark-mode-toggle></app-header-dark-mode-toggle>
       <app-header-reload></app-header-reload>
-      <settings-button></settings-button>
-      <a
-        class="readme"
-        mat-icon-button
-        href="https://github.com/tensorflow/tensorboard/blob/master/README.md"
-        rel="noopener noreferrer"
-        target="_blank"
-        aria-label="Help"
-      >
-        <mat-icon svgIcon="help_outline_24px"></mat-icon>
-      </a>
     </mat-toolbar>
   `,
   styleUrls: ['header_component.css'],

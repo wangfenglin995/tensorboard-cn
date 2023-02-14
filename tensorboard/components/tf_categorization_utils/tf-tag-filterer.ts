@@ -23,7 +23,7 @@ class TfTagFilterer extends PolymerElement {
   static readonly template = html`
     <paper-input
       no-label-float=""
-      label="Filter tags (regular expressions supported)"
+      label="标签过滤（支持正则表达式）"
       value="{{_tagFilter}}"
       class="search-input"
     >

@@ -39,7 +39,7 @@ class TfMultiCheckbox extends LegacyElementMixin(PolymerElement) {
     <paper-input
       id="names-regex"
       no-label-float=""
-      label="Write a regex to filter runs"
+      label="正则表达式过滤"
       value="[[regex]]"
       on-bind-value-changed="_debouncedRegexChange"
     ></paper-input>

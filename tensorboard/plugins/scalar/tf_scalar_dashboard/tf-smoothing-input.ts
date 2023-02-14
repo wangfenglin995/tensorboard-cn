@@ -25,7 +25,7 @@ import '../../../components/polymer/irons_and_papers';
 // tslint:disable-next-line:no-unused-variable
 class TfSmoothingInput extends PolymerElement {
   static readonly template = html`
-    <h3 class="title">Smoothing</h3>
+    <h3 class="title">平滑</h3>
     <div class="smoothing-block">
       <paper-slider
         id="slider"

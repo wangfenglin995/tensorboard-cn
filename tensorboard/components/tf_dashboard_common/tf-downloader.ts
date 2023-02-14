@@ -23,7 +23,7 @@ export class TfDownloader extends PolymerElement {
   static readonly template = html`
     <paper-dropdown-menu
       no-label-float="true"
-      label="run to download"
+      label="运行结果下载"
       selected-item-label="{{_run}}"
     >
       <paper-listbox slot="dropdown-content">
